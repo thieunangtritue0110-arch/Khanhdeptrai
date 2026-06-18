@@ -1,0 +1,158 @@
+/* Reset cài đặt mặc định và thiết lập font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Đưa toàn bộ thẻ ra căn giữa màn hình xám nhạt */
+body {
+    background-color: #f2f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Khung bọc thẻ Profile */
+.profile-card {
+    background-color: #ffffff;
+    width: 370px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Nền màu xanh phía trên */
+.top-background {
+    background-color: #4070f4;
+    height: 145px;
+    width: 100%;
+}
+
+/* Nội dung bên trong thẻ */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 35px 30px;
+}
+
+/* Khung tròn chứa ảnh đại diện */
+.avatar-container {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 5px; /* Tạo viền trắng xung quanh ảnh */
+    margin-top: -57px; /* Đẩy ảnh lấn lên phần nền xanh */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.473);
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Tên và chức danh */
+.name {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+    margin-top: 15px;
+}
+
+.job {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+/* Khu vực icon MXH */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.1);
+}
+
+/* Màu sắc chuẩn cho từng icon mxh giống hình */
+.icon.facebook { background-color: #3b5998; }
+.icon.twitter { background-color: #1da1f2; }
+.icon.instagram { background-color: #e1306c; }
+.icon.youtube { background-color: #ff0000; }
+
+/* Khu vực nút bấm hành động */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4070f4;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #265df2;
+}
+
+/* Phần thống kê ở đáy thẻ */
+.analytics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #707070;
+    font-size: 14px;
+}
+
+.data-item i {
+    font-size: 16px;
+}
+
+/* Đường gạch dọc phân cách dữ liệu */
+.divider {
+    width: 1px;
+    height: 18px;
+    background-color: #e0e0e0;
+}
